@@ -1,0 +1,1 @@
+insert into t_inventory(quantityt_order,sku_code) values(100,'iphon_15'),(100,'pixel_8'),(100,'galaxy s24'),(100,'oneplus_12');

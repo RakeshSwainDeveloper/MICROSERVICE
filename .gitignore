@@ -1,0 +1,53 @@
+# Maven target directories
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven Wrapper JAR
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse / Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.metadata/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Visual Studio Code
+.vscode/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Environment and sensitive files (optional)
+.env
+*.jks
+*.pfx
+*.pem
+
+
+
+# Ignore Docker MySQL data volume
+inventory-service/docker/mysql/data/
+order-service/mysql/mysql.sock
+
