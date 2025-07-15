@@ -2,14 +2,14 @@ package com.rks.employeeapp.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.util.DefaultUriBuilderFactory;
 
 @Configuration
-public class EmployeeAppCOnfig {
+public class EmployeeAppConfig {
 
 	@Value("${addressservice.base.url}")
 	private String baseUri;
@@ -29,6 +29,7 @@ public class EmployeeAppCOnfig {
 //	}
 	
 	@Bean
+	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
